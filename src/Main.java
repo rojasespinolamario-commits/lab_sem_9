@@ -1,5 +1,7 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -16,5 +18,34 @@ public class Main {
         pasajeros.put(pasajero3.getDni(), pasajero3);
         pasajeros.put(pasajero4.getDni(), pasajero4);
         pasajeros.put(pasajero5.getDni(), pasajero5);
+
+        String dniBuscado = "45678912";
+
+        System.out.println("---- RECORRIDO DE PASAJEROS CON ITERATOR ----");
+
+        Iterator<Map.Entry<String, Pasajero>> iterator = pasajeros.entrySet().iterator();
+
+        Pasajero pasajeroEncontrado = null;
+
+        while (iterator.hasNext()) {
+            Map.Entry<String, Pasajero> entrada = iterator.next();
+            Pasajero pasajero = entrada.getValue();
+
+            System.out.println("-----------------");
+            System.out.println(pasajero);
+
+            if (pasajero.getDni().equals(dniBuscado)) {
+                pasajeroEncontrado = pasajero;
+            }
+        }
+
+        System.out.println("\n---- RESULTADO DE LA BUSQUEDA POR DNI ---");
+
+        if(pasajeroEncontrado != null) {
+            System.out.println("Pasajero encontrado:");
+            System.out.println(pasajeroEncontrado);
+        } else {
+            System.out.println("No se encontro ningun pasajero con el DNI: " + dniBuscado);
+        }
     }
 }
