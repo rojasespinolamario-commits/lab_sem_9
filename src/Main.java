@@ -11,5 +11,10 @@ public class Main {
         Pasajero pasajero4 = new Pasajero("Ana Torres", "78912345", "Piura", "17/06/2026", "10:15", "22");
         Pasajero pasajero5 = new Pasajero("Luis Garcia", "32165498", "Arequipa", "17/06/2026", "06:30", "9");
 
+        pasajeros.put(pasajero1.getDni(), pasajero1);
+        pasajeros.put(pasajero2.getDni(), pasajero2);
+        pasajeros.put(pasajero3.getDni(), pasajero3);
+        pasajeros.put(pasajero4.getDni(), pasajero4);
+        pasajeros.put(pasajero5.getDni(), pasajero5);
     }
 }
