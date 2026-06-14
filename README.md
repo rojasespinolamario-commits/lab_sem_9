@@ -11,6 +11,6 @@ Se eligió la estructura HashMap porque permite almacenar los pasajeros utilizan
 En este proyecto se utiliza un Iterator porque el objetivo es demostrar el recorrido de la colección y evaluar cada pasajero durante la búsqueda.
 El uso de Iterator permite recorrer todos los elementos almacenados en el HashMap de forma ordenada a nivel lógico, verificando uno por uno si el DNI del pasajero coincide con el DNI buscado.
 
-## SALIDA EN COSOLA
+## SALIDA EN CONSOLA
 <img width="596" height="800" alt="image" src="https://github.com/user-attachments/assets/307dbe26-d7a9-4212-bec7-dd42a3dfe6d4" />
 <img width="564" height="512" alt="image" src="https://github.com/user-attachments/assets/0bee3e14-4c77-41b4-a2b7-f5f2027c47d9" />
